@@ -1284,3 +1284,39 @@ body {
         height: 280px !important;
     }
 }
+
+/* =========================================
+   CENTRAR PORTADA + NOMBRE
+========================================= */
+
+.player .cover-container {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    width: 100% !important;
+    height: 300px !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    margin: 0 !important;
+}
+
+.player .cover {
+    width: 250px !important;
+    height: 250px !important;
+
+    margin: 0 auto !important;
+}
+
+.player .song-info {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+
+    width: 100% !important;
+
+    text-align: center !important;
+
+    margin: 0 !important;
+}
