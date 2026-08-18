@@ -986,11 +986,11 @@ body {
 /* 💗 ROSA */
 #lyricsText p.active-lyric.highlight-lyric {
     opacity: 1 !important;
-    color: #ff69b4 !important;
+    color: #ee86ba !important;
     font-size: 1.4em !important;
     font-weight: 900 !important;
     transform: scale(1.15) !important;
-    text-shadow: 0 0 12px rgba(255, 105, 180, 0.6) !important;
+    text-shadow: 0 0 12px rgba(248, 142, 195, 0.6) !important;
 }
 
 /* 💛 AMARILLO */
@@ -1005,7 +1005,7 @@ body {
 
 /* 💙 AZUL */
 #lyricsText p.active-lyric.blue-lyric {
-    color: #5dade2 !important;
+    color: #8cc5ea !important;
     font-size: 1.4em !important;
     font-weight: 900 !important;
     transform: scale(1.15) !important;
@@ -1014,7 +1014,7 @@ body {
 
 /* 💚 VERDE */
 #lyricsText p.active-lyric.green-lyric {
-    color: #58d68d !important;
+    color: #7dfbb2 !important;
     font-size: 1.4em !important;
     font-weight: 900 !important;
     transform: scale(1.15) !important;
@@ -1023,7 +1023,7 @@ body {
 
 /* 💜 MORADO */
 #lyricsText p.active-lyric.purple-lyric {
-    color: #bb86fc !important;
+    color: #be9be9 !important;
     font-size: 1.4em !important;
     font-weight: 900 !important;
     transform: scale(1.15) !important;
@@ -1032,7 +1032,7 @@ body {
 
 /* ❤️ ROJO */
 #lyricsText p.active-lyric.red-lyric {
-    color: #ff6b6b !important;
+    color: #910b0b !important;
     font-size: 1.4em !important;
     font-weight: 900 !important;
     transform: scale(1.15) !important;
