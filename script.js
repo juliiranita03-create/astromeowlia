@@ -259,13 +259,15 @@ syncedLyrics: [
       text: "Que Tu hijo soy",
        Highlight: true
      },
-     { time: 104, text: "Que Tu hijo soy" },
-     { time: 111, text: "Que Tu hijo soy" },
-     { time: 121, text: "Todos tenemos una historia que contar" },
-     { time: 124, text: "Todos los que están aquí no tienen" },
-     { time: 126, text: "Que juzgar, porque todos, a todos" },
-     { time: 129, text: "Dios nos ha levantado" },
-     { time: 130, text: "Hoy mejor dile que está a tu lado conmigo" },
+     { time: 104, text: "Que Tu hijo soy",
+        HighlightYellow: true
+      },
+     { time: 111, text: "Que Tu hijo soy",
+        Highlight:true
+      },
+     
+     { time: 121, text: "..." },
+
      { time: 133, text: "Vuelvo a casa, a mi casa" },
      { time: 137, text: "Casa de Mi Padre" },
      { time: 140, text: "Vuelvo a casa, a mi casa" },
@@ -290,31 +292,51 @@ syncedLyrics: [
      { time: 187, text: "Todo lo haces nuevo" },
 
      { time: 189, text: "Dios te llama y te dice" },
-     { time: 190, text: "Que Tu hijo soy" },
-     { time: 197, text: "Que Tu hijo soy" },
-     { time: 205, text: "Que Tu hijo soy" },
-     { time: 209, text: "Que Tu hijo soy" },
+     { time: 190, text: "Que Tu hijo soy",
+        Highlight: true
+      },
+     { time: 197, text: "Que Tu hijo soy",
+        HighlightYellow: true
+      },
+     { time: 205, text: "Que Tu hijo soy",
+        Highlight: true
+      },
+     { time: 209, text: "Que Tu hijo soy",
+        HighlightYellow: true
+      },
 
      { time: 229, text: "..." },
 
-     { time: 262, text: "Que Su hijo soy" },
-     { time: 268, text: "Que Su hijo soy" },
+     { time: 262, text: "Que Su hijo soy",
+        Highlight: true
+      },
+     { time: 268, text: "Que Su hijo soy",
+        HighlightYellow: true
+      },
 
      { time: 278, text: "Él a mí me sanó" },
      { time: 281, text: "Y mi vida cambió" },
      { time: 285, text: "Mi alma levantó" },
      { time: 288, text: "Y me justificó" },
 
-     { time: 290, text: "Que Su hijo soy" },
-     { time: 297, text: "Que Su hijo soy" },
+     { time: 290, text: "Que Su hijo soy",
+        Highlight: true
+      },
+     { time: 297, text: "Que Su hijo soy",
+        HighlightYellow: true
+      },
 
      { time: 305, text: "Yo tenía depresión" },
      { time: 308, text: "Pero Cristo me salvó" },
      { time: 312, text: "En mi corazón había un gran dolor" },
      { time: 315, text: "Pero Dios me liberó" },
 
-     { time: 319, text: "Y Su hijo soy" },
-     { time: 326, text: "Que Su hijo soy" },
+     { time: 319, text: "Y Su hijo soy",
+        Highlight: true
+      },
+     { time: 326, text: "Que Su hijo soy",
+        HighlightYellow: true
+      },
 
      { time: 335, text: "Él me salvó" },
      { time: 337, text: "Él me salvó" },
@@ -325,16 +347,24 @@ syncedLyrics: [
      { time: 345, text: "Él lo sanó" },
      { time: 346, text: "Él lo sanó" },
 
-     { time: 348, text: "Y Su hijo soy" },
-     { time: 355, text: "Que Su hijo soy" },
+     { time: 348, text: "Y Su hijo soy",
+        Highlight: true
+      },
+     { time: 355, text: "Que Su hijo soy",
+        HighlightYellow: true
+      },
 
      { time: 363, text: "Estaba en tinieblas" },
      { time: 367, text: "Yo estaba en tinieblas" },
      { time: 370, text: "Pero el temor, la ansiedad" },
      { time: 374, text: "Él lo echó afuera" },
 
-     { time: 377, text: "Y Su hijo soy" },
-     { time: 384, text: "Que Su hijo soy" },
+     { time: 377, text: "Y Su hijo soy",
+        Highlight: true
+      },
+     { time: 384, text: "Que Su hijo soy",
+        HighlightYellow: true
+      },
 
      { time: 390, text: "..." },
 
@@ -357,7 +387,9 @@ syncedLyrics: [
      { time: 453, text: "Tú siempre estás conmigo ahí" },
      { time: 455, text: "Por eso te vengo a decir que" },
 
-     { time: 463, text: "Que Tu hijo soy" },
+     { time: 463, text: "Que Tu hijo soy",
+        Highlight: true
+      },
 
      { time: 470, text: "..." },
 
@@ -375,8 +407,12 @@ syncedLyrics: [
      { time: 515, text: "En la vida estaba ya todo perdido y Él me encontró" },
      { time: 517, text: "Por eso te puedo decir que yo" },
 
-     { time: 520, text: "Su hijo soy" },
-     { time: 527, text: "Que Su hijo soy" },
+     { time: 520, text: "Su hijo soy",
+        HighlightYellow: true
+      },
+     { time: 527, text: "Que Su hijo soy",
+        Highlight: true
+      },
      { time: 532, text: "Anda, cuenta que ya no hay tristeza" },
      { time: 535, text: "Ya no hay tristeza" },
 
@@ -390,10 +426,18 @@ syncedLyrics: [
      { time: 551, text: "Ya no hay vergüenza" },
      { time: 552, text: "Todo lo haces nuevo" },
 
-     { time: 556, text: "Que Su hijo soy" },
-     { time: 563, text: "Que Su hijo soy" },
-     { time: 570, text: "Que Su hijo soy" },
-     { time: 578, text: "Su hijo soy" },
+     { time: 556, text: "Que Su hijo soy",
+        HighlightYellow: true
+      },
+     { time: 563, text: "Que Su hijo soy",
+        Highlight: true
+      },
+     { time: 570, text: "Que Su hijo soy",
+        HighlightYellow: true
+      },
+     { time: 578, text: "Su hijo soy",
+        Highlight: true
+      },
 
      { time: 585, text: "Ya no hay tristeza" },
      { time: 587, text: "Ya no hay vergüenza" },
@@ -407,8 +451,12 @@ syncedLyrics: [
      { time: 613, text: "Casa de Mi Padre" },
      { time: 615, text: "Porque Él me dice" },
 
-     { time: 617, text: "Que Su hijo soy" },
-     { time: 620, text: "Que Su hijo soy" },
+     { time: 617, text: "Que Su hijo soy",
+        HighlightYellow: true
+      },
+     { time: 620, text: "Que Su hijo soy",
+        Highlight: true
+      },
      { time: 629, text: "..." },
     
     
@@ -492,18 +540,29 @@ Por lo que hiciste en mí
 
 syncedLyrics: [
 
+    { time: 1, text: "..." },
+    
+    
     { time: 20, text: "Quién rompe el poder del pecado" },
-    { time: 24, text: "Su amor es fuerte y poderoso" },
-    { time: 30, text: "El rey de gloria, el rey de majestad?" },
+    { time: 25, text: "Su amor es fuerte y poderoso" },
+    { time: 29, text: "El rey de gloria, el rey de majestad?" },
 
     { time: 39, text: "Conmueve el mundo con su estruendo" },
     { time: 44, text: "Y nos asombra con maravillas" },
-    { time: 49, text: "El rey de gloria, el rey de majestad" },
+    { time: 48, text: "El rey de gloria, el rey de majestad" },
 
-    { time: 56, text: "Gracia sublime es" },
-    { time: 61, text: "Perfecto es tu amor" },
-    { time: 66, text: "Tomaste mi lugar" },
-    { time: 71, text: "Cargaste tú mi cruz" },
+    { time: 56, text: "Gracia sublime es",
+        Highlight: true
+     },
+    { time: 60, text: "Perfecto es tu amor",
+        HighlightRed: true
+     },
+    { time: 65, text: "Tomaste mi lugar",
+        Highlight: true
+     },
+    { time: 70, text: "Cargaste tú mi cruz", 
+        Highlight: true
+    },
 
     { time: 75, text: "Tu vida diste ahí" },
     { time: 80, text: "Y ahora libre soy" },
@@ -515,37 +574,37 @@ syncedLyrics: [
     { time: 111, text: "El rey de gloria, el rey de majestad, ¡oh!" },
 
     { time: 121, text: "El que gobierna con su justicia" },
-    { time: 126, text: "Y resplandece con su belleza" },
+    { time: 125, text: "Y resplandece con su belleza" },
     { time: 130, text: "El rey de gloria, el rey de majestad, ¡wo-oh!" },
 
-    { time: 138, text: "Gracia sublime es" },
-    { time: 142, text: "Perfecto es tu amor" },
+    { time: 137, text: "Gracia sublime es" },
+    { time: 143, text: "Perfecto es tu amor" },
     { time: 147, text: "Tomaste mi lugar" },
     { time: 152, text: "Cargaste tú mi cruz" },
 
-    { time: 156, text: "Tu vida diste ahí" },
-    { time: 162, text: "Y ahora libre soy" },
+    { time: 157, text: "Tu vida diste ahí" },
+    { time: 163, text: "Y ahora libre soy" },
     { time: 168, text: "Jesús, te adoro" },
     { time: 170, text: "Por lo que hiciste en mí" },
 
-    { time: 193, text: "Digno es el cordero de Dios" },
+    { time: 192, text: "Digno es el cordero de Dios" },
     { time: 197, text: "Digno es el rey que la muerte venció" },
     { time: 202, text: "Digno es el cordero de Dios" },
     { time: 207, text: "Digno es el rey que la muerte venció" },
 
-     { time: 212, text: "Digno es el cordero de Dios" },
+     { time: 211, text: "Digno es el cordero de Dios" },
     { time: 216, text: "Digno es el rey que la muerte venció" },
     { time: 221, text: "Digno es el cordero de Dios" },
-    { time: 225, text: "¡Digno! ¡Digno! !Digno!" },
+    { time: 224, text: "¡Digno! ¡Digno! !Digno!" },
 
-    { time: 229, text: "Gracia sublime es" },
-    { time: 234, text: "Perfecto es tu amor" },
+    { time: 228, text: "Gracia sublime es" },
+    { time: 233, text: "Perfecto es tu amor" },
     { time: 238, text: "Tomaste mi lugar" },
     { time: 243, text: "Cargaste tú mi cruz" },
 
     { time: 248, text: "Tu vida diste ahí" },
     { time: 253, text: "Y ahora libre soy" },
-    { time: 259, text: "Jesús, te adoro" },
+    { time: 260, text: "Jesús, te adoro" },
     { time: 262, text: "Por lo que hiciste en mí" },
 
     { time: 272, text: "Gracia sublime es" },
@@ -553,10 +612,11 @@ syncedLyrics: [
     { time: 281, text: "Tomaste mi lugar" },
     { time: 287, text: "Cargaste tú mi cruz" },
 
-    { time: 292, text: "Tu vida diste ahí" },
-    { time: 297, text: "Y ahora libre soy" },
-    { time: 303, text: "Jesús, te adoro" },
-    { time: 305, text: "Por lo que hiciste en mí" },
+    { time: 291, text: "Tu vida diste ahí" },
+    { time: 296, text: "Y ahora libre soy" },
+    { time: 304, text: "Jesús, te adoro" },
+    { time: 306, text: "Por lo que hiciste en mí" },
+    
 
 ]
     },
@@ -871,7 +931,10 @@ function crearCorazon() {
         "♥",
         "💕",
         "💗",
-        "💖"
+        "💖",
+        "❤️",
+        "💘"
+
     ];
 
     heart.textContent =
@@ -898,7 +961,7 @@ function crearCorazon() {
 }
 
 
-setInterval(crearCorazon, 700);
+setInterval(crearCorazon, 150);
 
 // =====================================================
 // LETRA SINCRONIZADA
