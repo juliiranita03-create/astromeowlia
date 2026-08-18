@@ -1046,3 +1046,218 @@ body {
 #lyricsText p.red-lyric {
     font-family: "Dancing Script", cursive !important;
 }
+/* =========================================
+   DISEÑO RESPONSIVE
+   CELULAR / TABLET / LAPTOP
+========================================= */
+
+/* TABLET Y PANTALLAS MEDIANAS */
+@media (max-width: 1100px) {
+
+    .player {
+        width: 95% !important;
+        max-width: 900px !important;
+
+        grid-template-columns: 180px minmax(280px, 1fr) 150px !important;
+
+        column-gap: 15px !important;
+    }
+
+    .lyrics-panel {
+        width: 180px !important;
+    }
+
+    .player .cover-container {
+        width: 100% !important;
+    }
+
+    .player .cover-container .cover {
+        width: 210px !important;
+        height: 210px !important;
+        min-width: 210px !important;
+        min-height: 210px !important;
+    }
+
+    .player > #playlist {
+        width: 150px !important;
+        margin-left: 0 !important;
+    }
+
+    .player > h2 {
+        width: 150px !important;
+        margin-left: 0 !important;
+    }
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px !important;
+        align-items: flex-start !important;
+    }
+
+    .player {
+        width: 100% !important;
+        max-width: 450px !important;
+
+        height: auto !important;
+
+        margin: 10px auto !important;
+        padding: 20px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 15px !important;
+
+        overflow: visible !important;
+    }
+
+
+    /* LETRA */
+
+    .lyrics-panel {
+        order: 6;
+
+        position: relative !important;
+
+        width: 100% !important;
+        height: 300px !important;
+
+        margin: 10px 0 !important;
+
+        overflow-y: auto !important;
+    }
+
+
+    /* PORTADA */
+
+    .cover-container {
+        order: 1;
+
+        width: 100% !important;
+        height: auto !important;
+
+        margin: 0 !important;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .player .cover-container .cover {
+        width: min(70vw, 250px) !important;
+        height: min(70vw, 250px) !important;
+
+        min-width: 0 !important;
+        min-height: 0 !important;
+    }
+
+
+    /* INFORMACIÓN */
+
+    .song-info {
+        order: 2;
+
+        width: 100% !important;
+    }
+
+    .song-info h1 {
+        font-size: 21px !important;
+    }
+
+
+    /* PROGRESO */
+
+    .progress-area {
+        order: 3;
+
+        width: 100% !important;
+    }
+
+
+    /* CONTROLES */
+
+    .controls {
+        order: 4;
+
+        width: 100% !important;
+
+        gap: 30px !important;
+    }
+
+
+    /* VOLUMEN */
+
+    .volume {
+        order: 5;
+
+        width: 80% !important;
+
+        max-width: 250px !important;
+    }
+
+
+    /* PLAYLIST */
+
+    .player > h2 {
+        order: 7;
+
+        width: 100% !important;
+
+        margin: 15px 0 5px !important;
+
+        text-align: center !important;
+    }
+
+    .player > #playlist {
+        order: 8;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+    }
+
+    .playlist-song {
+        width: 100% !important;
+    }
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .player {
+        padding: 15px !important;
+    }
+
+    .player .cover-container .cover {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .controls {
+        gap: 20px !important;
+    }
+
+    .controls button {
+        font-size: 22px !important;
+    }
+
+    .play-button {
+        width: 58px !important;
+        height: 58px !important;
+    }
+
+    .lyrics-panel {
+        height: 280px !important;
+    }
+}
