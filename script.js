@@ -582,7 +582,7 @@ let isPlaying = false;
 
 // CREAR REPRODUCTOR DE YOUTUBE
 
-function onYouTubeIframeAPIReady() {
+function iniciarReproductor() {
 
     player = new YT.Player("player", {
 
