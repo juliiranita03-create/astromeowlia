@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>💕 Astromeowlia</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- CORAZONES -->
+    <div class="hearts"></div>
+
+    <main class="player">
+        <!-- LETRA -->
+         <aside class="lyrics-panel">
+            <div class="lyrics-header">
+                ♫ <span>LETRA</span>
+            </div>
+
+            <h2 id="lyricsTitle">Tu hijo soy</h2>
+            <p id="lyricsArtist">Barak</p>
+
+            <div class="lyrics-divider">♡</div>
+
+            <div id="lyricsText" class="lyricsText">
+                <p>Selecciona una canción para ver la letra.</p>
+            </div>
+         </aside>
+
+        <!-- PORTADA -->
+        <div class="cover-container">
+            <div class="cover">
+                <img id="coverImage"
+                    src="https://i.ytimg.com/vi/jfKfPfyJRdk/hqdefault.jpg"
+                    alt="Portada">
+            </div>
+        </div>
+
+        <!-- INFORMACIÓN -->
+        <div class="song-info">
+            <h1 id="songTitle">Lofi Hip Hop Radio</h1>
+            <p id="artist">Lofi Girl</p>
+        </div>
+
+        <!-- YOUTUBE OCULTO -->
+        <div id="player"></div>
+
+        <!-- PROGRESO -->
+        <div class="progress-area">
+
+            <span id="currentTime">0:00</span>
+
+            <input
+                type="range"
+                id="progress"
+                min="0"
+                max="100"
+                value="0"
+            >
+
+            <span id="duration">0:00</span>
+
+        </div>
+
+        <!-- CONTROLES -->
+        <div class="controls">
+
+            <button onclick="previousSong()">⏮</button>
+
+            <button
+                class="play-button"
+                onclick="playPause()">
+                ▶
+            </button>
+
+            <button onclick="nextSong()">⏭</button>
+
+        </div>
+
+        <!-- VOLUMEN -->
+        <div class="volume">
+
+            <span>🔊</span>
+
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="100"
+                value="70"
+                onchange="changeVolume()"
+            >
+
+        </div>
+
+        <!-- PLAYLIST -->
+        <h2>♡ Mi playlist</h2>
+
+        <div id="playlist"></div>
+
+    </main>
+
+
+    <!-- YOUTUBE API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1048 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 20px 20%,
+            #ff9fc8,
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            #c084fc,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #160b18,
+            #30152f,
+            #170d20
+        );
+}
+
+
+/* =================================
+   REPRODUCTOR
+================================= */
+
+.player {
+
+    position: relative;
+
+    width: 390px;
+
+    max-width: 100%;
+
+    padding: 30px;
+
+    border-radius: 35px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    backdrop-filter: blur(25px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45);
+
+    z-index: 5;
+}
+
+
+/* =================================
+   PORTADA
+================================= */
+
+.cover-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 25px;
+}
+
+.cover {
+
+    width: 240px;
+
+    height: 240px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    border: 8px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.5);
+
+    animation: rotate 12s linear infinite;
+
+    animation-play-state: paused;
+}
+
+.cover.playing {
+
+    animation-play-state: running;
+}
+
+
+.cover img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+@keyframes rotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =================================
+   INFORMACIÓN
+================================= */
+
+.song-info {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.song-info h1 {
+
+    font-size: 22px;
+
+    margin-bottom: 6px;
+}
+
+.song-info p {
+
+    color: #ffacd0;
+
+    font-size: 14px;
+}
+
+
+/* =================================
+   YOUTUBE
+================================= */
+
+#player {
+
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: -10000px;
+    top: 0;
+
+
+}
+
+
+/* =================================
+   PROGRESO
+================================= */
+
+.progress-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 11px;
+
+    color: #ddd;
+}
+
+#progress {
+
+    flex: 1;
+
+    accent-color: #ff77b7;
+
+    cursor: pointer;
+}
+
+
+/* =================================
+   CONTROLES
+================================= */
+
+.controls {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-top: 20px;
+}
+
+.controls button {
+
+    border: none;
+
+    background: none;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.controls button:hover {
+
+    transform: scale(1.2);
+
+}
+
+
+/* PLAY */
+
+.play-button {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50% !important;
+
+    background: white !important;
+
+    color: #b84d91 !important;
+
+    font-size: 24px !important;
+
+    box-shadow:
+        0 8px 25px rgba(255,255,255,0.2);
+}
+
+
+/* =================================
+   VOLUMEN
+================================= */
+
+.volume {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 05px;
+
+    margin-top: 10px;
+}
+
+#volume {
+
+    flex: 1;
+
+    accent-color: #ff77b7;
+}
+
+
+/* =================================
+   PLAYLIST
+================================= */
+
+h2 {
+
+    margin-top: 28px;
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+
+.playlist-song {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 10px;
+
+    margin-bottom: 5px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.playlist-song:hover {
+
+    background:
+        rgba(255,255,255,0.10);
+
+}
+
+
+.playlist-song.active {
+
+    background:
+        rgba(255,119,183,0.22);
+
+}
+
+
+.playlist-song img {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+
+.playlist-info {
+
+    flex: 1;
+}
+
+
+.playlist-info strong {
+
+    display: block;
+
+    font-size: 14px;
+}
+
+
+.playlist-info span {
+
+    font-size: 11px;
+
+    color: #cfcfcf;
+}
+
+
+/* =================================
+   CORAZONES
+================================= */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -50px;
+
+    font-size: 20px;
+
+    opacity: 0.7;
+
+    pointer-events: none;
+
+    animation: floatHeart 7s linear forwards;
+
+    z-index: 1;
+}
+
+
+@keyframes floatHeart {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg)
+            scale(0.8);
+
+        opacity: 0;
+    }
+
+    10% {
+
+        opacity: 0.8;
+    }
+
+    100% {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg)
+            scale(1.3);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* =================================
+   CELULAR
+================================= */
+
+@media (max-width: 500px) {
+
+    body {
+
+        padding: 15px;
+    }
+
+    .player {
+
+        padding: 22px;
+    }
+
+    .cover {
+
+        width: 210px;
+
+        height: 210px;
+    }
+
+}
+
+/* =========================
+   PANEL DE LETRA
+   ========================= */
+
+.player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+/* Panel de la letra */
+.lyrics-panel {
+    width: 300px;
+    height: 500px;
+    padding: 25px;
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+.lyrics-header {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#lyricsTitle {
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+#lyricsArtist {
+    text-align: center;
+    margin: 0 0 20px;
+    opacity: 0.7;
+}
+
+/* Texto de la canción */
+.lyricsText {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.lyricsText p {
+    margin-bottom: 18px;
+}
+
+/* Línea decorativa */
+.lyrics-divider {
+    width: 60%;
+    height: 2px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* PANEL DE LETRA */
+
+.lyrics-panel {
+    position: absolute;
+    right: calc(50% + 50%);
+    top: 10%;
+    transform: translate(-30%);
+
+
+    width: 350px;
+    height: 450px;
+
+    padding: 25px;
+    box-sizing: border-box;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+
+    color: white;
+
+    overflow-y: auto;
+}
+
+.lyrics-header {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#lyricsTitle {
+    text-align: center;
+    margin: 10px 0 5px;
+}
+
+#lyricsArtist {
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.lyricsText {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.lyricsText p {
+    margin-bottom: 18px;
+}
+
+.lyrics-divider {
+    width: 60%;
+    height: 2px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* =====================================================
+   DISTRIBUCIÓN FINAL - NO TOCAR
+   ===================================================== */
+
+.player {
+    width: calc(100% - 30px) !important;
+    max-width: 1050px !important;
+    height: 600px !important;
+
+    margin: 20px auto !important;
+    padding: 20px !important;
+
+    box-sizing: border-box !important;
+
+    display: grid !important;
+
+    grid-template-columns: 220px minmax(350px, 1fr) 180px !important;
+    grid-template-rows: 250px 70px 55px 80px 1fr !important;
+
+    column-gap: 20px !important;
+    row-gap: 5px !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+/* =========================
+   LETRA — IZQUIERDA
+   ========================= */
+
+.lyrics-panel {
+    grid-column: 1 !important;
+    grid-row: 1 / 6 !important;
+
+    position: relative !important;
+
+    width: 220px !important;
+    height: 540px !important;
+
+    margin: 0 !important;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================
+   PORTADA — CENTRO
+   ========================= */
+
+.cover-container {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    width: 100% !important;
+    height: 500px !important;
+
+    margin: 0 !important;
+
+    position: relative !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.cover {
+    width: 190px !important;
+    height: 190px !important;
+
+    margin: 0 !important;
+
+    position: relative !important;
+}
+
+.cover img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+}
+
+
+/* =========================
+   NOMBRE — CENTRO
+   ========================= */
+
+.song-info {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    text-align: center !important;
+}
+
+
+/* =========================
+   YOUTUBE OCULTO
+   ========================= */
+
+#player {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+
+    width: 1px !important;
+    height: 1px !important;
+
+    position: absolute !important;
+
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+
+/* =========================
+   BARRA DE PROGRESO — CENTRO
+   ========================= */
+
+.progress-area {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+
+    width: 50% !important;
+
+    margin: 0 auto !important;
+}
+
+
+/* =========================
+   CONTROLES — CENTRO
+   ========================= */
+
+.controls {
+    grid-column: 2 !important;
+    grid-row: 4 !important;
+
+    width: 100% !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+/* =========================
+   VOLUMEN — CENTRO
+   ========================= */
+
+.volume {
+    grid-column: 2 !important;
+    grid-row: 5 !important;
+
+    width: 150px !important;
+
+    margin: 0 auto !important;
+
+    justify-self: center !important;
+}
+
+
+/* =========================
+   PLAYLIST — DERECHA
+   ========================= */
+
+.player > #playlist {
+    grid-column: 3 !important;
+    grid-row: 1 / 6 !important;
+
+    width: 180px !important;
+
+    margin: 10 !important;
+
+    align-self: center !important;
+}
+
+
+/* =========================
+   EVITAR DESBORDAMIENTO
+   ========================= */
+
+html,
+body {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    overflow-x: hidden !important;
+}
+
+.player * {
+    box-sizing: border-box !important;
+}
+
+
+/* =========================
+   PANTALLAS PEQUEÑAS
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .player {
+        width: calc(100% - 20px) !important;
+
+        grid-template-columns: 180px minmax(280px, 1fr) 150px !important;
+
+        column-gap: 12px !important;
+    }
+
+    .lyrics-panel {
+        width: 180px !important;
+    }
+
+    .player > #playlist {
+        width: 10px !important;
+    }
+
+    .cover {
+        width: 160px !important;
+        height: 160px !important;
+    }
+}
+/* =====================================================
+   AJUSTE FINAL DE POSICIONES
+   ===================================================== */
+
+/* LETRA: mantenerla DENTRO del reproductor */
+.player > .lyrics-panel {
+    position: relative !important;
+
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+
+    grid-column: 1 !important;
+    grid-row: 1 / 6 !important;
+
+    width: 350px !important;
+    height: 540px !important;
+
+    margin: 0 !important;
+}
+
+
+/* TÍTULO "MI PLAYLIST" */
+/* TÍTULO "MI PLAYLIST" */
+
+.player > h2 {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+
+    width: 160px !important;
+
+    margin: -15px 0 5px -45px !important;
+
+    text-align: center !important;
+}
+
+
+/* LISTA DE CANCIONES */
+
+.player > #playlist {
+    grid-column: 3 !important;
+    grid-row: 2 / 6 !important;
+
+    width: 190px !important;
+
+    margin: -50px 0 0 -55px !important;
+
+    align-self: start !important;
+}
+
+
+/* MANTENER TODO EL CONTENIDO DENTRO */
+.player {
+    overflow: hidden !important;
+}
+
+/* =========================================
+   AJUSTE FINAL DE PORTADA
+   ========================================= */
+
+.player .cover-container {
+    width: 390px !important;
+    height: 300px !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    margin: 0 auto !important;
+}
+
+.player .cover-container .cover {
+    width: 250px !important;
+    height: 250px !important;
+
+    min-width: 250px !important;
+    min-height: 250px !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+.player .cover-container .cover img {
+    width: 100% !important;
+    height: 100% !important;
+
+    min-width: 100% !important;
+    min-height: 100% !important;
+
+    object-fit: cover !important;
+}
+
+/* =====================================================
+   LETRA SINCRONIZADA
+   ===================================================== */
+
+#lyricsText p {
+    opacity: 0.45;
+    transition: all 0.3s ease;
+}
+
+#lyricsText .active-lyric {
+    opacity: 1;
+    font-weight: bold;
+    transform: scale(1.03);
+}
+
+/* LETRA DESTACADA */
+
+#lyricsText .highlight-lyric {
+    font-size: 1.35em;
+    color: #ff8fc7;
+    font-weight: 800;
+    text-shadow: 0 0 12px rgba(255, 143, 199, 0.6);
+}
+
+#lyricsText {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+#lyricsText .active-lyric {
+    opacity: 1;
+    font-weight: bold;
+    transform: scale(1.03);
+}
+
+/* LETRA NORMAL */
+#lyricsText p {
+    opacity: 0.45;
+    transition: all 0.3s ease;
+}
+
+/* LETRA QUE SE ESTÁ CANTANDO */
+#lyricsText p.active-lyric {
+    opacity: 1;
+    font-weight: bold;
+    transform: scale(1.03);
+}
+
+/* ÉNFASIS ESPECIAL */
+#lyricsText p.active-lyric.highlight-lyric {
+    opacity: 1 !important;
+    color: #ff69b4 !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5) !important;
+}
+
+#lyricsText p.active-lyric.yellow-lyric {
+    opacity: 1 !important;
+    color: #e4d645 !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 10px rgba(228, 214, 69, 0.5) !important;
+}
+#lyricsText p.active-lyric.highlight-lyric {
+    opacity: 1 !important;
+    color: #ff69b4 !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5) !important;
+}
+
+/* =========================================
+   RESALTADORES DE LETRA
+========================================= */
+
+/* Línea normal */
+#lyricsText p {
+    opacity: 0.45;
+    transition: all 0.3s ease;
+}
+
+/* Línea que se está cantando */
+#lyricsText p.active-lyric {
+    opacity: 1 !important;
+    font-weight: bold;
+    transform: scale(1.03);
+}
+
+/* 💗 ROSA */
+#lyricsText p.active-lyric.highlight-lyric {
+    opacity: 1 !important;
+    color: #ff69b4 !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 12px rgba(255, 105, 180, 0.6) !important;
+}
+
+/* 💛 AMARILLO */
+#lyricsText p.active-lyric.yellow-lyric {
+    opacity: 1 !important;
+    color: #e4d645 !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 12px rgba(228, 214, 69, 0.6) !important;
+}
+
+/* 💙 AZUL */
+#lyricsText p.active-lyric.blue-lyric {
+    color: #5dade2 !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 12px rgba(93, 173, 226, 0.6) !important;
+}
+
+/* 💚 VERDE */
+#lyricsText p.active-lyric.green-lyric {
+    color: #58d68d !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 12px rgba(88, 214, 141, 0.6) !important;
+}
+
+/* 💜 MORADO */
+#lyricsText p.active-lyric.purple-lyric {
+    color: #bb86fc !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 12px rgba(187, 134, 252, 0.6) !important;
+}
+
+/* ❤️ ROJO */
+#lyricsText p.active-lyric.red-lyric {
+    color: #ff6b6b !important;
+    font-size: 1.4em !important;
+    font-weight: 900 !important;
+    transform: scale(1.15) !important;
+    text-shadow: 0 0 12px rgba(255, 107, 107, 0.6) !important;
+}
+#lyricsText p.highlight-lyric,
+#lyricsText p.yellow-lyric,
+#lyricsText p.blue-lyric,
+#lyricsText p.green-lyric,
+#lyricsText p.purple-lyric,
+#lyricsText p.red-lyric {
+    font-family: "Dancing Script", cursive !important;
+}
