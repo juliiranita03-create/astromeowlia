@@ -945,7 +945,7 @@ function crearCorazon() {
         ];
 
     heart.style.left =
-        Math.random() * 100 + "vw";
+        Math.random() * 500 + "vw";
 
     heart.style.fontSize =
         15 + Math.random() * 25 + "px";
