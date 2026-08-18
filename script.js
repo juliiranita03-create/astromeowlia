@@ -3,7 +3,7 @@ const songs = [
         title: "Tu hijo soy",
         artist: "Barak",
         videoId: "ytkThsgXHbQ",
-        cover: "cancion1.jpg",
+        cover: "https://raw.githubusercontent.com/juliranita03-create/astromeowlia/main/cancion1.jpg",
 
         lyrics: `¿Están listos para regresar
 A la casa del Padre?
@@ -420,7 +420,7 @@ syncedLyrics: [
         title: "Gracia sublime es",
         artist: "EEYEV",
         videoId: "0pOVNIsyIXM",
-        cover: "cancion2.jpg",
+        cover: "https://raw.githubusercontent.com/juliranita03-create/astromeowlia/main/cancion2.jpg",
 
         lyrics: `
         Quién rompe el poder del pecado
@@ -564,13 +564,13 @@ syncedLyrics: [
         title: "Amor sin condición",
         artist: "TWICE",
         videoId: "5hC5nKr-yUY",
-        cover: "cancion3.jpg"
+        cover: "https://raw.githubusercontent.com/juliranita03-create/astromeowlia/main/cancion3.jpg"
     },
     {
         title: "Aun en medio del dolor",
         artist: "TWICE",
         videoId: "ebm8kGUTvJQ",
-        cover: "cancion4.jpg"
+        cover: "https://raw.githubusercontent.com/juliranita03-create/astromeowlia/main/cancion4.jpg"
     },
 
 ];
